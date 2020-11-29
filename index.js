@@ -92,14 +92,14 @@ ${response.description}
 
 ![Badge:](https://img.shields.io/badge/License-${response.license}-brightgreen)
 
-## **Table Of Content**
-[1. Description](#Description:)
-[2. Installation](#Installation:)
-[3. Usage](#Usage:)
-[4. License](#License:)
-[5. Contributing](#Contributing:)
-[6. Tests](#Tests:)
-[7. Questions](#Questions:)
+## **Table Of Contents**
+*[1. Description](#Description:) 
+*[2. Installation](#Installation:) 
+*[3. Usage](#Usage:) 
+*[4. License](#License:) 
+*[5. Contributing](#Contributing:) 
+*[6. Tests](#Tests:) 
+*[7. Questions](#Questions:) 
   
 ## **Installation:** 
 Link to deployed site [here](${response.link})
