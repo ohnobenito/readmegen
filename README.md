@@ -6,8 +6,8 @@ A readme generator that uses command line input to write the file
 ![Badge:](https://img.shields.io/badge/License-GNU-brightgreen)
 
 ## **Table Of Contents**
-*[1. Description](#Description:) 
-*[2. Installation](#Installation:) 
+*[1. Description](#**Description:**) 
+*[2. Installation](#**Installation:**) 
 *[3. Usage](#Usage:) 
 *[4. License](#License:) 
 *[5. Contributing](#Contributing:) 
