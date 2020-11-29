@@ -32,12 +32,17 @@ inquirer
     {
         type: "input",
         name: "title",
-        message: "What is the name of your project?"
+        message: "What would you like to name this project?"
+    },
+    {
+        type: "input",
+        name: "link",
+        message: "Please enter a link to the deployed site."
     },
     {
         type: "input",
         name: "description",
-        message: "Please enter a brief description for this project:"
+        message: "Please enter a brief overview description for this project:"
     },
     {
         type: "input",
@@ -45,84 +50,85 @@ inquirer
         message: "Please describe the usage of this project:"
     },
     {
-        type: "checkbox",
+        type: "list",
         name: "license",
         message: "Please select which license you would like to add to your project:",
         choices: [ 
-        {
-            name: "Apache License 2.0"
-        },
-        {
-            name: "MIT License"
-        },
-        {
-            name: "GNU General Public License v3.0"
-        },
-        {
-            name: "ISC License"
-        },
-        {
-            name: "The Unlicense"
-        },
+             "Apache License 2.0",
+             "MIT License",
+             "GNU General Public License v3.0",
+             "ISC License",
+             "The Unlicense"
         ]
     },
     {
         type: "input",
         name: "tech",
-        message: "Please list which technologies were used during this project:",
+        message: "Please list which technologies were used for this application:",
     },
     {
         type: "input",
         name: "installation",
-        message: "Please describe the installation for this project",
-    }    
+        message: "Please describe the installation for this application",
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Please list all contributers on this application:",
+    },   
+    {
+        type: "input",
+        name: "test",
+        message: "Please provide any information for tests:",
+    }        
 ])
 .then(response => {
     const fileName = "README.md";
     
     let readMeGen = `# **${response.title}**
----
 
-## **Table Of Contents**
----
-[1. Description](#Description:)
-[2. Installation](#Installation:)
-[3. Usage](#Usage:)
-[4. Credits & License](#Credits:)
-[5. Contact & Questions](#Contact:)
-[6. Badges and Technology](#Badges)
-  
 ## **Description:** 
 ${response.description}
 
+![Badge:](https://img.shields.io/badge/License-${response.license}-brightgreen)
+
+## **Table Of Contents**
+[1. Description](#Description:)
+[2. Installation](#Installation:)
+[3. Usage](#Usage:)
+[4. License](#License:)
+[5. Contributing](#Contributing:)
+[6. Tests](#Tests:)
+[7. Questions](#Questions:)
+  
 ## **Installation:** 
+Link to deployed site [here](${response.link})
+
 ${response.installation}
 
 ## **Usage:** 
 ${response.usage}
 
-## **Credits:**
-This project was created by ${response.name}. 
-
-## **Contact:**
-Please contact here:
-[Github](https://www.github.com/${response.github})
-Email: ${response.email}
-
-## **Badges:
-[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue)](https://opensource.org/licenses/Apache-2.0)
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen)](https://opensource.org/licenses/MIT)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue)](https://www.gnu.org/licenses/gpl-3.0)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue)](https://opensource.org/licenses/ISC)
-[![License: Unlicense](https://img.shields.io/badge/License-Unlicense-blue)](http://unlicense.org/)
-
-**Technologies Used:**
+## **Technologies Used:**
 ${response.tech}
+
+## **License:**
+This application is covered by the ${response.license} license.
+
+## **Contributing:**
+This project was created by ${response.contributing}
+
+## **Tests:**
+${response.test}
+
+## **Questions:**
+Follow me on GitHub here: [Github](https://www.github.com/${response.github})
+Have additional questions? Contact ${response.name} by email: ${response.email}
 
 `;
 
 
-    fs.writeFile(fileName,readMeGen, {}, () => console.log("file written!"));
+    fs.writeFile(fileName,readMeGen, {}, () => console.log("Thank you! You're README file has been generated!"));
     
     
 })
