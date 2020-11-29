@@ -87,41 +87,42 @@ inquirer
     
     let readMeGen = `# **${response.title}**
 
-## **Description:** 
+## Description 
 ${response.description}
 
 ![Badge:](https://img.shields.io/badge/License-${response.license}-brightgreen)
 
-## **Table Of Contents**
-*[1. Description](#Description:) 
-*[2. Installation](#Installation:) 
-*[3. Usage](#Usage:) 
-*[4. License](#License:) 
-*[5. Contributing](#Contributing:) 
-*[6. Tests](#Tests:) 
-*[7. Questions](#Questions:) 
+## Table of Contents
+[1. Description](#Description)
+[2. Installation](#Installation)
+[3. Usage](#Usage)
+[4. Technologies](#Technologies)
+[4. License](License)
+[5. Contributing](#Contributing)
+[6. Tests](#Tests)
+[7. Questions](#Questions) 
   
-## **Installation:** 
+## Installation 
 Link to deployed site [here](${response.link})
 
 ${response.installation}
 
-## **Usage:** 
+## Usage 
 ${response.usage}
 
-## **Technologies Used:**
+## Technologies
 ${response.tech}
 
-## **License:**
+## License
 This application is covered by the ${response.license} license.
 
-## **Contributing:**
+## Contributing
 This project was created by ${response.contributing}
 
-## **Tests:**
+## Tests
 ${response.test}
 
-## **Questions:**
+## Questions
 Follow me on GitHub here: [Github](https://www.github.com/${response.github})
 Have additional questions? Contact ${response.name} by email: ${response.email}
 
