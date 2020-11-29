@@ -69,7 +69,7 @@ inquirer
     {
         type: "input",
         name: "installation",
-        message: "Please describe the installation for this application",
+        message: "Please describe the installation for this application:",
     },
     {
         type: "input",
@@ -94,13 +94,21 @@ ${response.description}
 
 ## Table of Contents
 [1. Description](#Description)
+
 [2. Installation](#Installation)
+
 [3. Usage](#Usage)
+
 [4. Technologies](#Technologies)
+
 [4. License](License)
+
 [5. Contributing](#Contributing)
+
 [6. Tests](#Tests)
+
 [7. Questions](#Questions) 
+
   
 ## Installation 
 Link to deployed site [here](${response.link})
