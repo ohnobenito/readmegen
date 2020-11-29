@@ -54,11 +54,11 @@ inquirer
         name: "license",
         message: "Please select which license you would like to add to your project:",
         choices: [ 
-             "Apache License 2.0",
-             "MIT License",
-             "GNU General Public License v3.0",
-             "ISC License",
-             "The Unlicense"
+             "Apache",
+             "MIT",
+             "GNU",
+             "ISC",
+             "Unlicense"
         ]
     },
     {
@@ -92,7 +92,7 @@ ${response.description}
 
 ![Badge:](https://img.shields.io/badge/License-${response.license}-brightgreen)
 
-## **Table Of Contents**
+## **Table Of Content**
 [1. Description](#Description:)
 [2. Installation](#Installation:)
 [3. Usage](#Usage:)
