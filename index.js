@@ -1,15 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-//Questions Needed:
-//Project Title
-//Description of Project
-//Installation
-//Usage
-//License
-//Tests
-//Questions
-
 console.log('Hello and welcome to this README generator! You will be asked a few questions which will be compiled into a perfect README file to use')
 
 inquirer
@@ -54,17 +45,12 @@ inquirer
         name: "license",
         message: "Please select which license you would like to add to your project:",
         choices: [ 
-             "Apache",
-             "MIT",
-             "GNU",
-             "ISC",
-             "Unlicense"
+             "apache-2.0",
+             "mit",
+             "gpl-3.0",
+             "isc",
+             "unlicense"
         ]
-    },
-    {
-        type: "input",
-        name: "tech",
-        message: "Please list which technologies were used for this application:",
     },
     {
         type: "input",
@@ -74,13 +60,18 @@ inquirer
     {
         type: "input",
         name: "contributing",
-        message: "Please list all contributers on this application:",
+        message: "Please provider any information on contributing guidelines:",
     },   
     {
         type: "input",
         name: "test",
         message: "Please provide any information for tests:",
-    }        
+    },
+    {
+        type: "input",
+        name: "author",
+        message: "Please list all authors of this project:"
+    }       
 ])
 .then(response => {
     const fileName = "README.md";
@@ -90,48 +81,40 @@ inquirer
 ## Description 
 ${response.description}
 
+Link to deployed site [here](${response.link})<br>
 ![Badge:](https://img.shields.io/badge/License-${response.license}-brightgreen)
 
 ## Table of Contents
-[1. Description](#Description)
-
-[2. Installation](#Installation)
-
-[3. Usage](#Usage)
-
-[4. Technologies](#Technologies)
-
-[4. License](License)
-
-[5. Contributing](#Contributing)
-
-[6. Tests](#Tests)
-
-[7. Questions](#Questions) 
+[1. Description](#Description)<br>
+[2. Installation](#Installation)<br>
+[3. Usage](#Usage)<br>
+[4. License](License)<br>
+[5. Contributing](#Contributing)<br>
+[6. Tests](#Tests)<br>
+[7. Authors](#Authors)<br>
+[8. Questions](#Questions)<br>
 
   
 ## Installation 
-Link to deployed site [here](${response.link})
-
 ${response.installation}
 
 ## Usage 
 ${response.usage}
 
-## Technologies
-${response.tech}
-
 ## License
-This application is covered by the ${response.license} license.
+This application is covered by the ${response.license} license. For more information on licensing please visit [Choose A License](https://choosealicense.com/licenses/${response.license}).
 
 ## Contributing
-This project was created by ${response.contributing}
+${response.contributing}
 
 ## Tests
 ${response.test}
 
+## Authors
+This application was created by ${response.author}.
+
 ## Questions
-Follow me on GitHub here: [Github](https://www.github.com/${response.github})
+Follow me on GitHub here: [Github](https://www.github.com/${response.github})<br>
 Have additional questions? Contact ${response.name} by email: ${response.email}
 
 `;
