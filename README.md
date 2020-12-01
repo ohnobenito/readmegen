@@ -3,7 +3,7 @@
 ## Description 
 An easy to use README generator! A command-line application that takes user input and generates a professional looking README file that the user can use for any project.
 
-Links to [GitHub Repo](GitHub.com/ohnobenito/readmegen) and [Demo Video](https://drive.google.com/file/d/1lXFgUJJWpE2dNom9hp4f1KcV6YjWlFRo/view?usp=sharing)<br>
+Links to [GitHub Repo](https://www.github.com/ohnobenito/readmegen) and [Demo Video](https://drive.google.com/file/d/1lXFgUJJWpE2dNom9hp4f1KcV6YjWlFRo/view?usp=sharing)<br>
 ![Badge:](https://img.shields.io/badge/License-mit-brightgreen)<br>
 ![Application Demo Gif:](/images/rmg.gif)<br>
 
