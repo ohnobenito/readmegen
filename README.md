@@ -19,7 +19,7 @@ Links to [GitHub Repo](https://www.github.com/ohnobenito/readmegen) and [Demo Vi
 
   
 ## Installation 
-User must install Node.js onto their device. User must install inquirer by typing “npm -i inquirer” on the command line in this files directory.
+User must install Node.js onto their device. User must install inquirer by typing  “npm install inquirer” on the command line in this files directory.
 
 ## Usage 
 How to use: Navigate to the correct folder through command line and enter “node index.js”. Answer the prompts with all information about the application you would like a README file generated for. After all user input is accepted a fresh, professional README file will be created in the directory.
