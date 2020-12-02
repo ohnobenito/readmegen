@@ -102,7 +102,7 @@ ${response.installation}
 ${response.usage}
 
 ## License
-This application is covered by the ${response.license} license. For more information on licensing please visit [Choose A License](https://choosealicense.com/licenses/${response.license}).
+This application is covered by the ${response.license} license. Full documentation can be found [here](https://choosealicense.com/licenses/${response.license}).
 
 ## Contributing
 ${response.contributing}

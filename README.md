@@ -25,7 +25,7 @@ User must install Node.js onto their device. User must install inquirer by typin
 How to use: Navigate to the correct folder through command line and enter “node index.js”. Answer the prompts with all information about the application you would like a README file generated for. After all user input is accepted a fresh, professional README file will be created in the directory.
 
 ## License
-This application is covered by the mit license. For more information on licensing please visit [Choose A License](https://choosealicense.com/licenses/mit).
+This application is covered by the mit license. Full documentation can be found [here](https://choosealicense.com/licenses/mit).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
